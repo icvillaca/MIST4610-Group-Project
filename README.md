@@ -6,7 +6,7 @@
 1. Isabel Villaca @icvillaca
 2. Carson Farris
 3. Phoebe Prescott
-4. Alexa Persad
+4. Alexa Persad @aepersad
 
 **Problem Description:**
 
