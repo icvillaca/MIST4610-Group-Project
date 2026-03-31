@@ -12,3 +12,4 @@
 
 
 **Data Model**
+<img width="1159" height="1109" alt="DataModel" src="https://github.com/user-attachments/assets/ab581e9f-63ce-42ea-8efa-353d19a6124c" />
