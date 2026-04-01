@@ -1,0 +1,163 @@
+Table: Orders ,,,,,
+Column Name ,Description ,Data Type ,Si,Format ,Key? 
+,,,ze ,,
+order_id ,"PK, unique sequential ",INT ,,,PK 
+,number ,,,,
+order_datetime ,Date and time when the ,DATE ,,yyyy/mm/dd ,
+,orders were placed ,TIME ,,hh:mm:ss ,
+order_status ,Current status of the ,VARCHAR ,45,,
+,"order (processed, ",,,,
+,"pending, incomplete) ",,,,
+employee_id ,Employee who ,INT ,,,FK 
+,processed the order ,,,,employees 
+customer_id ,Customer who placed ,INT ,,,FK customers 
+,the order ,,,,
+discount_id ,Discount applied to the ,INT ,,,FK discounts 
+,order (if any) ,,,,
+Table: Discounts ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+discount_id ,"PK, unique sequential ",INT ,,,PK 
+,number for each ,,,,
+,discount ,,,,
+discount_name ,Name of the discount ,VARCHAR ,45,,
+,"(holiday, seasonal, ",,,,
+,"student, etc) ",,,,
+discount_type ,Type of discount applied ,VARCHAR ,45,,
+,"(percentage, BOGO, free ",,,,
+,"shipping, etc.) ",,,,
+discount_value ,Value of the discount in ,DECIMAL ,"10, 2 ",,
+,decimal format ,,,,
+start_date ,Date the discount ,DATE ,,yyyy-mm-dd ,
+,become active ,,,,
+end_date ,Date the discount expires ,DATE ,,yyyy-mm-dd ,
+is_active ,Shows whether the ,ENUM ,,"(‘active’, ",
+,discount is currently ,,,‘inactive’) ,
+,"active (active, inactive) ",,,,
+Table: Customers ,,,,,
+Column Name ,Description ,Data Type ,Siz,Format ,Key? 
+,,,e ,,
+customer_id ,"PK, unique sequential ",INT ,,,PK 
+,number ,,,,
+first_name ,Customer’s first name ,VARCHAR ,45,,
+last_name ,Customer’s last name ,VARCHAR ,45,,
+email ,Customer’s email ,VARCHAR ,45,Email format ,
+,address ,,,(blank@blank.c,
+,,,,om) ,
+phone ,Customer’s phone ,VARCHAR ,45,(###-###-####) ,
+,number ,,,,
+loyalty_join_date ,Date and time the ,DATETIME ,,Yyyy-mm-dd ,
+,customer joined the ,,,hh:mm:ss ,
+,loyalty program ,,,,
+is_loyalty_membe,Shows whether the ,ENUM ,,"(‘yes’, ‘no’) ",
+r ,customer is in the ,,,,
+,loyalty program ,,,,
+Table: Payments ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+payment_id ,"PK, unique sequential ",INT ,,,PK 
+,number for each ,,,,
+,payment transaction ,,,,
+payment_method ,Method used to pay for ,VARCHAR ,45,,
+,order (credit/debit ,,,,
+,"card, cash, ",,,,
+,paypal/apple pay) ,,,,
+subtotal ,Total cost of items ,DECIMAL ,"10, 2 ",,
+,before discounts and ,,,,
+,tax ,,,,
+discount_amount ,Amount deducted from ,DECIMAL ,"10,2 ",,
+,payment using ,,,,
+,discounts ,,,,
+tax_amount ,Amount of sales tax ,DECIMAL ,"10,2 ",,
+,applied to the order ,,,,
+total_amount ,Final amount charged ,DECIMAL ,"10,2 ",,
+,after everything is ,,,,
+,applied ,,,,
+tip_amount ,Tip amount added by ,DECIMAL ,"10,2 ",,
+,customer (optional) ,,,,
+orders_id ,Identifier of order ,INT ,,,"FK, "
+,associated with the ,,,,orders 
+,payment ,,,,
+Table: Order_Items ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+order_item_id ,"PK, unique identifier ",INT ,,,PK 
+,for each item in an ,,,,
+,order ,,,,
+quantity ,Number of products in ,INT ,,,
+,this order line ?? ,,,,
+unit_price_at_sal,Price of one unit of the ,DECIMAL ,"10, 2 ",,
+e ,product at the time of ,,,,
+,sale ,,,,
+line_notes ,Additional notes for ,VARCHAR ,45,,
+,this order (special ,,,,
+,instructions) ,,,,
+orders_id ,Identifier of which ,INT ,,,FK orders 
+,order this item belongs ,,,,
+,to ,,,,
+products_id ,Identifier of the ,INT ,,,FK 
+,product being ordered ,,,,products 
+Table: Products ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+product_id ,"PK, unique ",INT ,,,PK 
+,sequential number ,,,,
+category_id ,Identifier of the ,INT ,,,
+,product category ,,,,
+product_name ,Name of the product ,VARCHAR ,45,,
+size_label ,Size of the product ,VARCHAR ,45,,
+,"(small, medium, ",,,,
+,large) ,,,,
+unit_price ,Current price per ,DECIMAL ,"10,2 ",,
+,unit of the product ,,,,
+,?? ,,,,
+is_active ,Shows whether the ,ENUM ,,"(‘yes’,’no’) ",
+,product is currently ,,,,
+,available for sale ,,,,
+product_categories_,Foreign key linking ,INT ,,,FK 
+category_id ,to product category ,,,,
+,table ?? ,,,,
+supplier_id ,Identifier of the ,INT ,,,FK 
+,supplier providing ,,,,
+,the product ,,,,
+suppliers_supplier_i,??? ,INT ,,,"FK, suppliers "
+d ,,,,,
+Table: Suppliers ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+supplier_id ,"PK, unique sequential ",INT ,,,PK 
+,number for a supplier ,,,,
+supplier _name ,Name of the supplier ,VARCHAR ,45,,
+,company ,,,,
+contact_name ,Name of the main ,VARCHAR ,45,,
+,contact person at the ,,,,
+,supply company ,,,,
+phone ,Supplier’s phone ,VARCHAR ,45,Phone # ,
+,number ,,,(###-###-####) ,
+email ,Supplier’s email ,VARCHAR ,45,Email ,
+,address ,,,(blank@blank.com) ,
+Table: Employees ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+employee_id ,"PK, unique sequential ",INT ,,,PK 
+,number for each ,,,,
+,employee ,,,,
+first_name ,Employee’s first name ,VARCHAR ,45,,
+last_name ,Employee’s last name ,VARCHAR ,45,,
+email ,Employee’s email ,VARCHAR ,45,,
+,address ,,,,
+role_title ,Employees job role ,VARCHAR ,45,,
+,"(barista, supervisor, ",,,,
+,"cashier, manager) ",,,,
+hire_date ,Date the employee was ,DATE ,,yyyy-mm-dd ,
+,hired ,,,,
+hourly_wage ,Employees hourly pay ,DECIMAL ,"6,2 ",,
+,rate ,,,,
+Table: Shifts ,,,,,
+Column Name ,Description ,Data Type ,Size ,Format ,Key? 
+shift_id ,"PK, unique sequential ",INT ,,,PK 
+,number for shift ,,,,
+shift_start ,Date and time of the ,DATETIME ,,Yyyy-mm-dd ,
+,start of the shift ,,,hh:mm:ss ,
+shift_end ,Date and time of the ,DATETIME ,,Yyyy-mm-dd ,
+,end of the shift ,,,hh:mm:ss ,
+station ,Work station employee ,VARCHAR ,45,,
+,used during the shift ,,,,
+,"(BAR, REG, KTC) ",,,,
+employees_id ,Identifier of the ,INT ,,,FK 
+,employee assigned to ,,,,
+,the shift ,,,,
