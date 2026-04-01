@@ -1,5 +1,5 @@
 # MIST4610-Group-Project
-#Team Name:
+# Team Name:
 21479 Group 3
 
 **Team Members:**
