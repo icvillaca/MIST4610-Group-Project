@@ -167,28 +167,37 @@ Query 5 is useful for businesses to see which products are selling the best, hel
 
 ## Query 6
 Query 6 lists all employees who are making more than 10 dollars an hour.   
-![][image7]  
+
+![plot](./query6.png)
+
 Query 6 allows management to identify employees that are making above a certain wage threshold, $10/hr. Managers are able to use the information for budgeting and ensure fair wages. Managers can also use the information to see whether a specific hourly wage someone is earning aligns with their performance and role.
 
 ## Query 7
 Query 7 lists all orders in which a discount was applied. It also lists the dates and times it occurred in descending order.  
-![][image8]
+
+![plot](./query7.png)
 
 Query 7 allows shops and managers to see how often and how many orders are used with a discount. This is useful to track revenue and profitability with different promotions done for customers. This query can also be used to track employee behavior and ensure discounts are being applied in accordance to company policy.
 
 ## Query 8
 Query 8 lists the names and IDs of customers and how many orders they have placed.  
-![][image9]  
+
+![plot](./query8.png)
+
 Query 8 is valuable to managers that are trying to view the history of customer behavior. It also allows shops to see the degree of loyalty customers show and how well shops can retain customers. This can be used to show customers who are not as active but could possibly re-engage through promotional efforts and marketing.
 
 ## Query 9
 Query 9 lists customers with emails that end in .com and .edu. It also combines customers, orders, and payments to show only customers with payments greater than the average payment amount in descending order.  
-**![][image10]**  
+
+![plot](./query9.png)
+
 Query 9 helps identify customers who spend more than the average and narrows this list by only coming customers who have emails that end in .com and .edu. This allows managers to distinguish valuable customers who are more important to the business that could benefit from promotions while giving insight on loyalty.
 
 ## Query 10
 Query 10 lists every product and corresponding ID. It also lists how many units of each are sold and is presented in descending order of total revenue for each product.  
-![][image11]  
+
+![plot](./query10.png)
+
 Query 10 allows managers to view which products are the most profitable. This allows shops to tailor their menus and offer more products that managers think would sell by looking at this query. This query also allows for shops to understand their supply management and which products may need to be restocked more often.
 
 | Feature | Query 1 | Query 2 | Query 3 | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |
