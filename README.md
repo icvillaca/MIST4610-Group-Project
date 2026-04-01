@@ -18,6 +18,28 @@ Our model is based on the structure of a basic local coffee shop. This database 
 
 
 ## Data Dictionary
+| Column Name       | Description                                          | Data Type | Size | Format                                                   | Key? |
+| :---------------- | :--------------------------------------------------- | :-------- | :--- | :------------------------------------------------------- | :--- |
+| customer_id       | PK, unique sequential number                         | INT       |      |                                                          | PK   |
+| first_name        | Customer’s first name                                | VARCHAR   | 45   |                                                          |      |
+| last_name         | Customer’s last name                                 | VARCHAR   | 45   |                                                          |      |
+| email             | Customer’s email address                             | VARCHAR   | 45   | Email format ([blank@blank.com](mailto:blank@blank.com)) |      |
+| phone             | Customer’s phone number                              | VARCHAR   | 45   | (###-###-####)                                           |      |
+| loyalty_join_date | Date the customer joined the loyalty program         | DATE      |      | YYYY-MM-DD                                               |      |
+| is_loyalty_member | Shows whether the customer is in the loyalty program | ENUM      |      | ('yes', 'no')                                            |      |
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Table: Customers
 
 | Column Name | Description | Data Type | Size | Format | Key? |
