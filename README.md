@@ -6,10 +6,10 @@
 ## Team Members:
 1. Isabel Villaca [@icvillaca](https://github.com/icvillaca)
 2. Carson Farris [@carsonf17](https://github.com/carsonf17)
-3. Phoebe Prescott
+3. Phoebe Prescott [@phoebeprescott](https://github.com/phoebeprescott)
 4. Alexa Persad [@aepersad](https://github.com/aepersad)
 
-##Problem Description:**
+## Problem Description:
 
 
 ## Data Model
