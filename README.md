@@ -18,7 +18,7 @@ Our model is based on the structure of a basic local coffee shop. This database 
 
 
 ## Data Dictionary
-Table: Orders
+## Table: Orders
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -29,7 +29,7 @@ Table: Orders
 | customer\_id | Customer who placed the order | INT |  |  | FK customers |
 | discount\_id | Discount applied to the order (if any) | INT |  |  | FK discounts |
 
-Table: Discounts
+## Table: Discounts
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -41,7 +41,7 @@ Table: Discounts
 | end\_date | Date the discount expires | DATE |  | yyyy-mm-dd |  |
 | is\_active | Shows whether the discount is currently active (active, inactive) | ENUM |  | (‘active’, ‘inactive’) |  |
 
-Table: Customers
+## Table: Customers
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -53,7 +53,7 @@ Table: Customers
 | loyalty\_join\_date | Date and time the customer joined the loyalty program | DATETIME |  | Yyyy-mm-dd hh:mm:ss |  |
 | is\_loyalty\_member | Shows whether the customer is in the loyalty program | ENUM |  | (‘yes’, ‘no’) |  |
 
-Table: Payments
+## Table: Payments
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -66,7 +66,7 @@ Table: Payments
 | tip\_amount | Tip amount added by customer (optional) | DECIMAL | 10,2 |  |  |
 | orders\_id | Identifier of order associated with the payment | INT |  |  | FK, orders |
 
-Table: Order\_Items
+## Table: Order\_Items
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -77,7 +77,7 @@ Table: Order\_Items
 | orders\_id | Identifier of which order this item belongs to | INT |  |  | FK orders |
 | products\_id | Identifier of the product being ordered | INT |  |  | FK products |
 
-Table: Products
+## Table: Products
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -91,7 +91,7 @@ Table: Products
 | supplier\_id | Identifier of the supplier providing the product | INT |  |  | FK |
 | suppliers\_supplier\_id | ??? | INT |  |  | FK, suppliers |
 
-Table: Suppliers
+## Table: Suppliers
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -101,7 +101,7 @@ Table: Suppliers
 | phone | Supplier’s phone number | VARCHAR | 45 | Phone \# (\#\#\#-\#\#\#-\#\#\#\#) |  |
 | email | Supplier’s email address | VARCHAR | 45 | Email (blank@blank.com) |  |
 
-Table: Employees
+## Table: Employees
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -113,7 +113,7 @@ Table: Employees
 | hire\_date | Date the employee was hired | DATE |  | yyyy-mm-dd |  |
 | hourly\_wage | Employees hourly pay rate | DECIMAL | 6,2 |  |  |
 
-Table: Shifts
+## Table: Shifts
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
