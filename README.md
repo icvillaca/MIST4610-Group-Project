@@ -132,4 +132,62 @@ Our model is based on the structure of a basic local coffee shop. This database 
 
 
 ## Queries
+Query 1 lists the product name, ID, and unit price for all active products in the database, filtering using the “is\_active” attribute. 
+
+![][image2]
+
+This would provide a very basic and up-to-date understanding for managers to know what is currently sellable. This can be useful for things like inventory checks, catalog updates, and removing discontinued or irrelevant items. This can help to avoid confusion and prevent outdated items that aren’t needed from appearing in the catalog. 
+
+2\. Query 2 retrieves the customers who have email address from Amazon, or ending in “@amazon.co.jp”.**![][image3]**  
+   
+This pattern-based query could be useful for identifying certain customer segments based on certain emails, potentially for new marketing campaigns or trends based on their email. For example, the company might want to analyze engagement between those using amazon vs those using yahoo. It works give the business more overall information on their customers to help them better penetrate the market. 
+
+3\. Query 3 lists all the processed orders that were placed by customers who are part of the loyalty program. 
+
+![][image4]  
+This query can be used to evaluate the behavior of loyalty program members, more specifically, the completed purchases. This query can help managers evaluate the success of the loyalty program, by seeing if it is actually working at driving sales and identifying the highest value customer segments. 
+
+4\. Query 4 calculates the total amount spent by each customer by joining the customers, orders, and payments tables, and then conducting the comparison using a subquery to calculate the overall average. 
+
+![][image5]
+
+This complex query is very useful for identifying high-value customers whose spending is over the average amount, helping the business to better segment its customer base. Furthermore, this data could be used for targeted marketing and loyalty programs. Overall, through its multiple joins, it provides a much more complete view of customer spending behavior, helping the business to make more well-informed decisions on how to move forward. 
+
+5\. Query 5 identifies the most popular products in terms of units sold for each product. The results are grouped by product and sorted in descending order.
+
+![][image6]
+
+Query 5 is useful for businesses to see which products are selling the best, helping them to grasp both market demand and consumer preferences. This would then inform all kinds of other business decisions, like inventory management and marketing strategies. 
+
+6\. Query 6 lists all employees who are making more than 10 dollars an hour.   
+![][image7]  
+Query 6 allows management to identify employees that are making above a certain wage threshold, $10/hr. Managers are able to use the information for budgeting and ensure fair wages. Managers can also use the information to see whether a specific hourly wage someone is earning aligns with their performance and role.
+
+**7\.** Query 7 lists all orders in which a discount was applied. It also lists the dates and times it occurred in descending order.  
+![][image8]
+
+Query 7 allows shops and managers to see how often and how many orders are used with a discount. This is useful to track revenue and profitability with different promotions done for customers. This query can also be used to track employee behavior and ensure discounts are being applied in accordance to company policy.
+
+8\. Query 8 lists the names and IDs of customers and how many orders they have placed.  
+![][image9]  
+Query 8 is valuable to managers that are trying to view the history of customer behavior. It also allows shops to see the degree of loyalty customers show and how well shops can retain customers. This can be used to show customers who are not as active but could possibly re-engage through promotional efforts and marketing.
+
+9\. Query 9 lists customers with emails that end in .com and .edu. It also combines customers, orders, and payments to show only customers with payments greater than the average payment amount in descending order.  
+**![][image10]**  
+Query 9 helps identify customers who spend more than the average and narrows this list by only coming customers who have emails that end in .com and .edu. This allows managers to distinguish valuable customers who are more important to the business that could benefit from promotions while giving insight on loyalty.
+
+10\. Query 10 lists every product and corresponding ID. It also lists how many units of each are sold and is presented in descending order of total revenue for each product.  
+![][image11]  
+Query 10 allows managers to view which products are the most profitable. This allows shops to tailor their menus and offer more products that managers think would sell by looking at this query. This query also allows for shops to understand their supply management and which products may need to be restocked more often.
+
+| Feature | Query 1 | Query 2 | Query 3 | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| Multiple table join |  |  |  | X | X |  |  |  | X |  |
+| subquery |  | X |  | X |  | X |  | X | X |  |
+| Group By |  |  |  |  | X |  |  | X | X | X |
+| Group By with Having |  |  |  | X |  |  |  |  |  |  |
+| Multi condition where |  | X |  |  |  |  | X |  |  |  |
+| Built-in functions | X | X | X | X | X |  |  | X | X | X |
+| **REGEXPS** | X |  |  |  |  |  |  |  | X |  |
+| **NOT EXISTS** |  |  |  |  |  | X |  |  |  |  |
 
