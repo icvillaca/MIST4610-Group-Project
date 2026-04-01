@@ -89,7 +89,7 @@ Our model is based on the structure of a basic local coffee shop. This database 
 | tip\_amount | Tip amount added by customer (optional) | DECIMAL | 10,2 |  |  |
 | orders\_id | Identifier of order associated with the payment | INT |  |  | FK, orders |
 
-## Table: product\_categories
+## Table: Product\_Categories
 
 | Column Name | Description | Data Type | Size | Format | Key? |
 | :---- | :---- | :---- | :---- | :---- | :---- |
