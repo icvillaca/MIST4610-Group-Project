@@ -89,6 +89,12 @@ Our model is based on the structure of a basic local coffee shop. This database 
 | tip\_amount | Tip amount added by customer (optional) | DECIMAL | 10,2 |  |  |
 | orders\_id | Identifier of order associated with the payment | INT |  |  | FK, orders |
 
+## Table: product\_categories
+
+| Column Name | Description | Data Type | Size | Format | Key? |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| category\_id | PK, unique sequential number | INT |  |  | PK |
+| category\_name | Name of the product category   | VARCHAR | 45 |  |  |
 
 ## Table: Products
 
