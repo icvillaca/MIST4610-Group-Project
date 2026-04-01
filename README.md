@@ -138,7 +138,7 @@ Query 1 lists the product name, ID, and unit price for all active products in th
 This would provide a very basic and up-to-date understanding for managers to know what is currently sellable. This can be useful for things like inventory checks, catalog updates, and removing discontinued or irrelevant items. This can help to avoid confusion and prevent outdated items that aren’t needed from appearing in the catalog. 
 
 ## Query 2
-Query 2 retrieves the customers who have email address from Amazon, or ending in “@amazon.co.jp”.**![][image3]**  
+Query 2 retrieves the customers who have email address from Amazon, or ending in “@amazon.co.jp”. 
 
 ![plot](./query2.png)
 
