@@ -4,7 +4,7 @@
 21479 Group 3
 
 ## Team Members:
-1. Isabel Villaca [@icvillaca]](https://github.com/icvillaca)
+1. Isabel Villaca [@icvillaca](https://github.com/icvillaca)
 2. Carson Farris [@carsonf17](https://github.com/carsonf17)
 3. Phoebe Prescott
 4. Alexa Persad [@aepersad](https://github.com/aepersad)
