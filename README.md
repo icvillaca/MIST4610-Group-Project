@@ -9,11 +9,13 @@
 3. Phoebe Prescott
 4. Alexa Persad [@aepersad](https://github.com/aepersad)
 
-**Problem Description:**
+##Problem Description:**
 
 
-**Data Model**
-<img width="1159" height="1109" alt="DataModel" src="https://github.com/user-attachments/assets/ab581e9f-63ce-42ea-8efa-353d19a6124c" />
+## Data Model
+<img width="1040" height="1109" alt="UpdatedFinal" src="https://github.com/user-attachments/assets/be3cd73b-b86d-46c4-a766-933db820c503" />
+
+
 
 **Data Dictionary**
 
