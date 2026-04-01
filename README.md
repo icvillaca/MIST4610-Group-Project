@@ -203,12 +203,12 @@ Query 10 allows managers to view which products are the most profitable. This al
 | Feature | Query 1 | Query 2 | Query 3 | Query 4 | Query 5 | Query 6 | Query 7 | Query 8 | Query 9 | Query 10 |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | Multiple table join |  |  |  | X | X |  |  |  | X |  |
-| subquery |  |  |  | X |  | X |  | X | X |  |
+| subquery |  |  | x | X |  | X |  | X | X |  |
 | Group By |  |  |  |  | X |  |  | X | X | X |
 | Group By with Having |  |  |  | X |  |  |  |  |  |  |
-| Multi condition where |  | X |  |  |  |  | X |  |  |  |
+| Multi condition where |  |  | x |  |  |  | X |  |  |  |
 | Built-in functions |  |  |  | X | X |  |  | X | X | X |
-| **REGEXPS** |  | X |  |  |  |  |  |  | X |  |
+| **REGEXPS** |  | x |  |  |  |  |  |  | X |  |
 | **NOT EXISTS** |  |  |  |  |  | X |  |  |  |  |
 
 ## Database Information:
