@@ -133,32 +133,35 @@ Our model is based on the structure of a basic local coffee shop. This database 
 ## Query 1 
 Query 1 lists the product name, ID, and unit price for all active products in the database, filtering using the “is\_active” attribute. 
 
-
+![plot](./query1.png)
 
 This would provide a very basic and up-to-date understanding for managers to know what is currently sellable. This can be useful for things like inventory checks, catalog updates, and removing discontinued or irrelevant items. This can help to avoid confusion and prevent outdated items that aren’t needed from appearing in the catalog. 
 
 ## Query 2
 Query 2 retrieves the customers who have email address from Amazon, or ending in “@amazon.co.jp”.**![][image3]**  
-   
+
+![plot](./query2.png)
+
 This pattern-based query could be useful for identifying certain customer segments based on certain emails, potentially for new marketing campaigns or trends based on their email. For example, the company might want to analyze engagement between those using amazon vs those using yahoo. It works give the business more overall information on their customers to help them better penetrate the market. 
 
 ## Query 3
 Query 3 lists all the processed orders that were placed by customers who are part of the loyalty program. 
 
-![][image4]  
+![plot](./query3.png)
+
 This query can be used to evaluate the behavior of loyalty program members, more specifically, the completed purchases. This query can help managers evaluate the success of the loyalty program, by seeing if it is actually working at driving sales and identifying the highest value customer segments. 
 
 ## Query 4
 Query 4 calculates the total amount spent by each customer by joining the customers, orders, and payments tables, and then conducting the comparison using a subquery to calculate the overall average. 
 
-![][image5]
+![plot](./query4.png)
 
 This complex query is very useful for identifying high-value customers whose spending is over the average amount, helping the business to better segment its customer base. Furthermore, this data could be used for targeted marketing and loyalty programs. Overall, through its multiple joins, it provides a much more complete view of customer spending behavior, helping the business to make more well-informed decisions on how to move forward. 
 
 ## Query 5
 Query 5 identifies the most popular products in terms of units sold for each product. The results are grouped by product and sorted in descending order.
 
-![][image6]
+![plot](./query5.png)
 
 Query 5 is useful for businesses to see which products are selling the best, helping them to grasp both market demand and consumer preferences. This would then inform all kinds of other business decisions, like inventory management and marketing strategies. 
 
