@@ -201,6 +201,7 @@ Query 10 allows managers to view which products are the most profitable. This al
 
 ## Database Information:
 Name of the database: al_Group_21479_G3
+
 Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q3();
 
 
