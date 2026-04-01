@@ -208,8 +208,8 @@ Query 10 allows managers to view which products are the most profitable. This al
 | Group By with Having |  |  |  | X |  |  |  |  |  |  |
 | Multi condition where |  | X |  |  |  |  | X |  |  |  |
 | Built-in functions | X | X | X | X | X |  |  | X | X | X |
-| **REGEXPS** | X |  |  |  |  |  |  |  | X |  |
-| **NOT EXISTS** |  |  |  |  |  | X |  |  |  |  |
+| **REGEXPS** |  | X |  |  |  |  |  |  | X |  |
+| **NOT EXISTS** |  | X |  |  |  | X |  |  |  |  |
 
 ## Database Information:
 Name of the database: al_Group_21479_G3
